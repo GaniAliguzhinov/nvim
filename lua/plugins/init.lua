@@ -1,8 +1,3 @@
-require("plugins.conform")
-require("plugins.telescope")
-require("plugins.treesitter")
-require("plugins.lspconfig")
-require("plugins.nvim-cmp")
 local fn = vim.fn
 
 -- Automatically install packer
@@ -42,8 +37,6 @@ packer.init({
 		end,
 	},
 })
-
-require("plugins.lualine")
 
 -- Install your plugins here
 return packer.startup(function(use)
